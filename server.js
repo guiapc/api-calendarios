@@ -28,6 +28,6 @@ app.get("/api/feriados", async (req, res) => {
 });
 
 const port = Number.parseInt(process.env.PORT ?? "4000", 10);
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   process.stdout.write(`API on http://localhost:${port}\n`);
 });
